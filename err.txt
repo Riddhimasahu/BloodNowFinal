@@ -1,0 +1,18 @@
+Resolving dependencies...
+Downloading packages...
+  meta 1.17.0 (1.18.2 available)
+  test_api 0.7.10 (0.7.11 available)
+  vector_math 2.2.0 (2.3.0 available)
+  win32 5.15.0 (6.0.0 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing 4 items...                                            
+
+   info - 'value' is deprecated and shouldn't be used. Use initialValue instead. This will set the initial value for the form field. This feature was deprecated after v3.33.0-1.0.pre - lib\screens\google_registration_screen.dart:214:17 - deprecated_member_use
+  error - The class 'GoogleSignIn' doesn't have an unnamed constructor - lib\screens\login_screen.dart:77:28 - new_with_undefined_constructor_default
+  error - The method 'signIn' isn't defined for the type 'GoogleSignIn' - lib\screens\login_screen.dart:78:42 - undefined_method
+  error - The class 'GoogleSignIn' doesn't have an unnamed constructor - lib\screens\user_registration_screen.dart:174:28 - new_with_undefined_constructor_default
+  error - The method 'signIn' isn't defined for the type 'GoogleSignIn' - lib\screens\user_registration_screen.dart:175:42 - undefined_method
+  error - The argument type 'Map<String, dynamic>' can't be assigned to the parameter type 'Map<String, String>'.  - lib\services\auth_api.dart:63:47 - argument_type_not_assignable
+
