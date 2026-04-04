@@ -1,0 +1,1 @@
+ C:\\Users\\sangeeta\\Documents\\BloodNow\\.dart_tool\\flutter_build\\986c63dcf093c37de0330be163cf1f22\\native_assets.json: 
