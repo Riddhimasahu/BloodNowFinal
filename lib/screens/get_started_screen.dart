@@ -111,7 +111,7 @@ class _GetStartedScreenState extends State<GetStartedScreen> with TickerProvider
           ),
         ),
         child: SafeArea(
-          child: Padding(
+          child: SingleChildScrollView(
             padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 20),
             child: FadeTransition(
               opacity: _fadeAnimation,
@@ -153,7 +153,7 @@ class _GetStartedScreenState extends State<GetStartedScreen> with TickerProvider
                       ),
                     ),
                   ),
-                  const Spacer(flex: 3),
+                  const SizedBox(height: 30),
                   
                   // Pulsing Logo
                   ScaleTransition(
@@ -179,7 +179,7 @@ class _GetStartedScreenState extends State<GetStartedScreen> with TickerProvider
                       ),
                     ),
                   ),
-                  const SizedBox(height: 50),
+                  const SizedBox(height: 40),
                   
                   // Title
                   Text(
@@ -205,8 +205,7 @@ class _GetStartedScreenState extends State<GetStartedScreen> with TickerProvider
                           ),
                     ),
                   ),
-                  
-                  const Spacer(flex: 4),
+                  const SizedBox(height: 40),
                   
                   // Get Started Button
                   Container(

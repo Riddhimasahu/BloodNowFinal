@@ -122,6 +122,8 @@ class _UserRegistrationScreenState extends State<UserRegistrationScreen> {
       backgroundColor: const Color(0xFFFFF8F8),
       body: SafeArea(
         child: SingleChildScrollView(
+          padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 20),
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [

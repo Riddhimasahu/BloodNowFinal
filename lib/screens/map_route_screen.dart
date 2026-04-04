@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
@@ -72,7 +73,10 @@ class _MapRouteScreenState extends State<MapRouteScreen> {
 
       final url = Uri.parse(
           'http://router.project-osrm.org/route/v1/driving/$startLng,$startLat;$endLng,$endLat?geometries=geojson');
-      final response = await http.get(url);
+      final response = await http.get(url).timeout(
+        const Duration(seconds: 15),
+        onTimeout: () => throw TimeoutException('Route request timed out'),
+      );
       
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);

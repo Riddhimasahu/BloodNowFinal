@@ -172,6 +172,8 @@ class _LoginScreenState extends State<LoginScreen> {
       backgroundColor: const Color(0xFFFFF8F8),
       body: SafeArea(
         child: SingleChildScrollView(
+          padding: const EdgeInsets.symmetric(vertical: 20),
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [

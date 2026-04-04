@@ -12,7 +12,9 @@ String resolveApiBaseUrl() {
   );
   if (fromEnv.isNotEmpty) return fromEnv;
   if (kDebugMode && Platform.isAndroid) {
-    return 'http://10.0.2.2:3000';
+    // 10.0.2.2 only works for the Android Emulator.
+    // For the physical device, we use your computer's local Wi-Fi IP:
+    return 'http://10.20.46.27:3000';
   }
   return 'http://127.0.0.1:3000';
 }

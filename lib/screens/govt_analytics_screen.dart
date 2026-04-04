@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:fl_chart/fl_chart.dart';
@@ -41,6 +42,9 @@ class _GovtAnalyticsScreenState extends State<GovtAnalyticsScreen> {
       final res = await http.get(
         Uri.parse('${ApiConfig.baseUrl}/api/analytics/dashboard'),
         headers: {'x-govt-token': 'admin123'},
+      ).timeout(
+        const Duration(seconds: 10),
+        onTimeout: () => throw TimeoutException('Request timed out after 10 seconds'),
       );
       if (res.statusCode == 200) {
         final data = jsonDecode(res.body);

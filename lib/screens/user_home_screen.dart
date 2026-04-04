@@ -261,7 +261,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> with SingleTickerProvid
   Widget _buildHomeContent(ColorScheme scheme, String name) {
     return _loadingUser
         ? const Center(child: CircularProgressIndicator())
-        : Padding(
+        : SingleChildScrollView(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -394,7 +394,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> with SingleTickerProvid
                     ],
                   ),
                 ),
-                const Spacer(),
+                const SizedBox(height: 24),
                 _DashboardCard(
                   title: 'I want to Donate Blood',
                   subtitle: 'Check eligibility and find a nearby blood bank to book an appointment.',
@@ -435,7 +435,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> with SingleTickerProvid
                     ),
                   ),
                 ),
-                const Spacer(flex: 2),
+                const SizedBox(height: 40),
               ],
             ),
           );

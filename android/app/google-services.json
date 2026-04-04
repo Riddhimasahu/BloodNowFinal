@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1029942048266",
+    "project_id": "blood-now-28e83",
+    "storage_bucket": "blood-now-28e83.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029942048266:android:5927eec3d1b7ba8d2451f3",
+        "android_client_info": {
+          "package_name": "com.bloodnow.app.blood_now"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZnlUJqYzzv4ySsIcDSZDHNTHHSTwMeUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
